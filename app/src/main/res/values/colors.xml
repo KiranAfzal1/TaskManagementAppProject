@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#A5D6A7</color>
+    <color name="yellow">#FFF59D</color>
+    <color name="red">#EF9A9A</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="light_green_bg">#F1F8E9</color>
+    <color name="task_card_bg">#E8F5E9</color>
+    <color name="task_title">#1B5E20</color>
+    <color name="task_description">#4E944F</color>
+    <color name="task_category_text">#2E7D32</color>
+    <color name="task_completed_text">#2E7D32</color>
+    <color name="priority_indicator">#43A047</color>
+    <color name="edit_icon_tint">#1976D2</color>
+    <color name="delete_icon_tint">#D32F2F</color>
+</resources>

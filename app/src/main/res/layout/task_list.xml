@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="4dp"
+    android:minHeight="80dp"
+    android:background="@color/task_card_bg"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="12dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+        <CheckBox
+            android:id="@+id/checkbox_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:id="@+id/text_task_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Task Title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/task_title"
+                    android:fontFamily="sans-serif-medium" />
+                <View
+                    android:id="@+id/view_priority_indicator"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/priority_indicator"
+                    android:background="@drawable/circle_background" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/text_task_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task description"
+                android:textSize="14sp"
+                android:textColor="@color/task_description"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif"
+                android:visibility="gone" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/text_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal"
+                    android:textSize="12sp"
+                    android:textColor="@color/task_category_text"
+                    android:background="@drawable/category_background"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:fontFamily="sans-serif-medium" />
+                <LinearLayout
+                    android:id="@+id/layout_due_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:visibility="visible">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_calendar"
+                        android:layout_marginEnd="4dp" />
+                    <TextView
+                        android:id="@+id/text_due_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 25, 2025"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout_completed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:background="@drawable/completed_background"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_check_circle"
+                        android:layout_marginEnd="4dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Completed"
+                        android:textSize="12sp"
+                        android:textColor="@color/task_completed_text"
+                      android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/button_edit"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_edit"
+                    app:tint="@color/edit_icon_tint"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="Edit task"/>
+
+                <ImageButton
+                    android:id="@+id/button_delete"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/delete_icon_tint"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Delete task"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+
+
+
