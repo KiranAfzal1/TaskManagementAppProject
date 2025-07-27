@@ -1,7 +1,7 @@
 # TASK MANAGER
 
 ## Working:
-This is a simple Task Manager App developed using XML and Kotlin.
+This is a simple Task Manager App developed using XML and Kotlin for android version 12.
 It allows users to create, view, edit, and delete personal tasks with an easy-to-use interface.
 
 ## Features:
